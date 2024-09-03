@@ -1,0 +1,89 @@
+@import url("https:fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: Inter; */
+  overflow-x: hidden;
+  /* text-decoration: none; */
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  /* Width of vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+  /* No background color for scrollbar track */
+  width: 0;
+  /* Set width to 0 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  /* Color of scrollbar thumb */
+  border-radius: 10px;
+}
+
+.showMenuStyle {
+  position: absolute;
+  top: 16px;
+  z-index: 34;
+  height: 190px !important;
+  flex-direction: column;
+  right: -7px;
+  background: white;
+  justify-content: left;
+  width: 250px !important;
+  margin-right: 15px;
+  border-radius: 15px;
+  align-items: self-start;
+  padding-left: 22px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.active {
+  border-bottom: 3px solid #f1a739;
+  border-radius: 0.5rem 0rem 0rem 0rem;
+}
+
+.navbar-hidden {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar-visible {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Slider.css */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  background: #ddd;
+}
